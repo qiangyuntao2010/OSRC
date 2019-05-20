@@ -1,346 +1,270 @@
-<html lang="en-US">
-
-<head>Bookmark Tool
-
-<style type='text/css'>
-
-head
-{
-margin:auto;
-width:20%;
-
-}
-h1
-{
-margin:auto;
-width:30%;
-wight:bold;
-}
-
-li
-{
-margin:auto;
-width:60%;
-background-color:#b0e0e6;
-}
-
-h3
-{
-margin:auto;
-width:60%;
-
-}
-
-h4
-{
-margin:auto;
-width:60%;
-
-}
-</style>
-
-
-
-</head>
-
-<body>
-<h1>Steps to use these tools</h1>
-<h3>1. Just drag and drop below URLs to your Browser's tool bar.</h3>
-<h3>2. In MOS SR page, click the bookmark you just added.</h3>
-<h3>Enjoy!</h3>
-
-<h3>-------------------------------------------------------------------------------------------------------</h3>
-<h3><li>
-<a href="javascript:
-
-var result='Not found product name!!';
-var Product=document.getElementById('productDescription'); 
-if(Product==null) {alert(result)};
-var str=Product.value;  
-var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i;
-var pattbody=/[VX]?[0-9-]+[zLB]?/;
-var patttail=/( M2| M3| P|post July|Disk Module)/i;
-
-var Realhead=patthead.exec(str);
-var realhead=Realhead[0];
-var realbody=pattbody.exec(str);
-
-if(patttail.test(str))
-{ var Realtail=patttail.exec(str);
-var realtail=Realtail[0];}
-else { var realtail=null};
-
-
-result=realhead+'_'+realbody;
-if(realtail){ result=result+'_'+realtail}; 
-result=result.replace(/(\s|-)/g,'_');
-result=result.replace(/_+/g,'_');
-result=result.replace(/_Blade_/i,'Blade');
-result=result.replace(/_Fire_/i,'Fire');
-
-
-result=result.replace('Sun_Server_X3_2L','SunFireX4270_M3');
-result=result.replace('Sun_Server_X3_2','SunFireX4170_M3');
-result=result.replace('Sun_Server_X2_8','SunFireX4800_M2');
-result=result.replace('Sun_Server_X2_4','SunFireX4470_M2');
-result=result.replace('SunBladeX3_2B','SunBladeX6270_M3');
-result=result.replace('Netra_X3_2','Netra_X4270_M3');
-result=result.replace('Netra_X3_2B','Netra_X6270_M3');
-result=result.replace(/Netra_3/,'Netra_CP_3');
-
-if(result.length<30)
-{ void(window.open('https://mosemp.us.oracle.com/handbook_internal/Systems/'+result+'/'+result+'.html'));}
-else(alert(result));">Handbook</a>
-<i>---  Updated, use in SR page</i></li></h3>
-
-
-
-
-
-
-<h3><li>
-<a href="javascript:
-
-var result='Not found product name!!';
-var Product=document.getElementById('productDescription'); 
-if(Product==null) {alert(result)};
-var str=Product.value;  
-var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i;
-var pattbody=/[VX]?[0-9-]+[zLB]?/;
-var patttail=/( M2| M3| P|post July|Disk Module)/i;
-
-var Realhead=patthead.exec(str);
-var realhead=Realhead[0];
-var realbody=pattbody.exec(str);
-
-if(patttail.test(str))
-{ var Realtail=patttail.exec(str);
-var realtail=Realtail[0];}
-else { var realtail=null};
-
-
-result=realhead+'_'+realbody;
-if(realtail){ result=result+'_'+realtail}; 
-result=result.replace(/(\s|-)/g,'_');
-result=result.replace(/_+/g,'_');
-result=result.replace(/_Blade_/i,'Blade');
-result=result.replace(/_Fire_/i,'Fire');
-
-
-result=result.replace('Sun_Server_X3_2L','SunFireX4270_M3');
-result=result.replace('Sun_Server_X3_2','SunFireX4170_M3');
-result=result.replace('Sun_Server_X2_8','SunFireX4800_M2');
-result=result.replace('Sun_Server_X2_4','SunFireX4470_M2');
-result=result.replace('SunBladeX3_2B','SunBladeX6270_M3');
-result=result.replace('Netra_X3_2','Netra_X4270_M3');
-result=result.replace('Netra_X3_2B','Netra_X6270_M3');
-result=result.replace(/Netra_3/,'Netra_CP_3');
-
-if(result.length<30)
-{ void(window.open('https://mosemp.us.oracle.com/handbook_internal/Systems/'+result+'/'+'components.html'));}
-else(alert(result));">Components</a>
-<i>---  Updated, use in SR page</i></li></h3>
-
-
-
-
-
-<h3><li>
-<a href="javascript:
-
-var result='Sorry, Product name not recognized!!';
-var Product=document.getElementById('productDescription'); 
-if(Product==null) {alert(result)};
-var str=Product.value;  
-var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i;
-var pattbody=/[VX]?[0-9-]+[zLB]?/;
-var patttail=/( M2| M3| P|post July|Disk Module)/i;
-
-var Realhead=patthead.exec(str);
-var realhead=Realhead[0];
-var realbody=pattbody.exec(str);
-
-if(patttail.test(str))
-{ var Realtail=patttail.exec(str);
-var realtail=Realtail[0];}
-else { var realtail=null};
-
-
-result=realhead+'_'+realbody;
-if(realtail){ result=result+'_'+realtail}; 
-result=result.replace(/(\s|-)/g,'_');
-result=result.replace(/_+/g,'_');
-result=result.replace(/_Blade_/i,'Blade');
-result=result.replace(/_Fire_/i,'Fire');
-
-
-result=result.replace('Sun_Server_X3_2L','SunFireX4270_M3');
-result=result.replace('Sun_Server_X3_2','SunFireX4170_M3');
-result=result.replace('Sun_Server_X2_8','SunFireX4800_M2');
-result=result.replace('Sun_Server_X2_4','SunFireX4470_M2');
-result=result.replace('SunBladeX3_2B','SunBladeX6270_M3');
-result=result.replace('Netra_X3_2','Netra_X4270_M3');
-result=result.replace('Netra_X3_2B','Netra_X6270_M3');
-result=result.replace(/Netra_3/,'Netra_CP_3');
-
-if(result.length<30)
-{ void(window.open('https://mosemp.us.oracle.com/handbook_internal/Systems/'+result+'/'+'docs.html'));}
-else(alert(result));">Docs</a>
-<i>---  Updated, use in SR page</i></li></h3>
-
-
-
-
-
-<h3><li>
-<a href="javascript:
-
-var result='Not found product name!!';
-var Product=document.getElementById('productDescription'); 
-if(Product==null) {alert(result)};
-var str=Product.value;  
-var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i;
-var pattbody=/[VX]?[0-9-]+[zLB]?/;
-var patttail=/( M2| M3| P|post July|Disk Module)/i;
-
-var Realhead=patthead.exec(str);
-var realhead=Realhead[0];
-var realbody=pattbody.exec(str);
-
-if(patttail.test(str))
-{ var Realtail=patttail.exec(str);
-var realtail=Realtail[0];}
-else { var realtail=null};
-
-
-result=realhead+'_'+realbody;
-if(realtail){ result=result+'_'+realtail}; 
-result=result.replace(/(\s|-)/g,'_');
-result=result.replace(/_+/g,'_');
-result=result.replace(/_Blade_/i,'Blade');
-result=result.replace(/_Fire_/i,'Fire');
-
-
-result=result.replace('Sun_Server_X3_2L','SunFireX4270_M3');
-result=result.replace('Sun_Server_X3_2','SunFireX4170_M3');
-result=result.replace('Sun_Server_X2_8','SunFireX4800_M2');
-result=result.replace('Sun_Server_X2_4','SunFireX4470_M2');
-result=result.replace('SunBladeX3_2B','SunBladeX6270_M3');
-result=result.replace('Netra_X3_2','Netra_X4270_M3');
-result=result.replace('Netra_X3_2B','Netra_X6270_M3');
-result=result.replace(/Netra_3/,'Netra_CP_3');
-
-if(result.length<30)
-{ void(window.open('https://mosemp.us.oracle.com/handbook_internal/Systems/'+result+'/'+'ht.html'));}
-else(alert(result));">How to</a><i>---  Updated, use in SR page</i></li></h3>
-
-
-
-
-
-<h3><li>
-<a href="javascript: 
-
-var result='Not found product name!!'; 
-
-var Product=document.getElementById('productDescription'); 
-if(Product==null) {alert(result)}; 
-var str=Product.value; 
-var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i; 
-var pattbody=/[VX]?[0-9-]+[zLB]?/; 
-var patttail=/( M2| M3| P|post July|Disk Module)/i; 
-var Realhead=patthead.exec(str); 
-var realhead=Realhead[0]; 
-var realbody=pattbody.exec(str); 
-var patt0=/(CP\d+|CT 900)/i;
-
-if(patttail.test(str)) 
-{ var Realtail=patttail.exec(str); var realtail=Realtail[0];} 
-else { var realtail=''}; 
-result=realhead+realbody+realtail; 
-result=result.replace(/Netra/i,'N'); 
-result=result.replace(/\s/g, ''); 
-result=result.replace(/SunFire/i,''); 
-result=result.replace(/SunServer/i,''); 
-result=result.replace(/SunBlade/i,''); 
-result=result.replace(/OracleServer/i,''); 
- 
-
-if(result.length<30) 
-
-if (result=='X4600M2') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4600'));} 
-else if (result=='X2200M2') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X2200'));} 
-else if (result=='X2100M2') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X2100'));} 
-else if (result=='X4200M2') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4100M2'));} 
-else if (result=='X4240') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4140'));} 
-else if (result=='X4270') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4170'));} 
-else if (result=='X4275') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4170'));} 
-else if (result=='X4440') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4140'));} 
-else if (result=='X4200') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4100'));} 
-else if (result=='NX4200M2') 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#NX4200'));} 
-else if (patt0.test(str)) 
-{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#CT900'));} 
-
-
-else if (result=='ExadataX2-8'|result=='ExadataX2-2'|result=='ExadataV2') 
-{ void(window.open(' https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=478246353467130&parent=DOCUMENT&sourceId=1354631.1&id=1358327.1&_afrWindowMode=0'));} 
-else if (result=='ExadataX3-8'|result=='ExadataX3-2'|result=='ExadataX4-2') 
-{ void(window.open('https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=478985447942978&parent=DOCUMENT&sourceId=1354631.1&id=1501410.1&_afrWindowMode=0'));} 
-else if (result=='ExadataX5-8'|result=='ExadataX5-2'|result=='ExadataX6-2'|result=='ExadataX6-8') 
-{ void(window.open('https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=479087484160514&parent=DOCUMENT&sourceId=1354631.1&id=1998905.1&_afrWindowMode=0'));} 
-else if (result=='ExadataX4-8') 
-{ void(window.open('https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=478985447942978&parent=DOCUMENT&sourceId=1354631.1&id=1501410.1&_afrWindowMode=0')); 
-void(window.open('https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=479087484160514&parent=DOCUMENT&sourceId=1354631.1&id=1998905.1&_afrWindowMode=0')); } 
-
-else { void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#'+result+''));} 
-else(alert(result));">Firmware Version</a><i>---  New, use in SR page</i></li></h3>
-
-
-
-
-
-<h3><li>
-<a href="javascript:%20%20%20%20%20var%20sr=document.getElementById('srNumber');%20%20%20var%20sum=document.getElementById('summary');%20%20var%20customer=document.getElementById('contactEmail');%20%20%20%20%20var%20name=customer.value;%20%20%20%20var%20part=name.split('.');%20%20%20part.pop();%20%20%20%20var%20first=part[0];%20%20%20%20var%20message='Hi%20'+first+'\n';%20%20%20%20if%20(name)%20%20var%20w=document.location='mailto:'+name+'?subject=Regarding%20SR%20'+sr.value+'--'+sum.value+'&body='+message;%20else%20alert('Email%20not%20found%20...');">EmailCustomer</a>
-<i>---  New, use in SR page</i></li></h3>
-
-
-<h3><li>
-<a href="javascript:  var FT=document.getElementById('displayNumber'); var sr=document.getElementById('parentSR');   var FE=document.getElementById('assignee');   var name=FE.value;  var part=name.split('@'); part.pop();  var first=part[0];  var message='Hi '+first+'\n';  if (FE) var w=document.location='mailto:'+FE.value+'?subject=Regarding FT '+FT.value+' -- SR '+sr.value+'&body='+message;    else alert('Email not found ...');">EmailFE</a>
-<i>---  New, use in FT page</i></li></h3>
-
-
-<h3><li>
-<a href="javascript:    var sr=document.getElementById('srNumber');  var sum=document.getElementById('summary'); var owner=document.getElementById('empEmail');    var name=owner.value;   var part=name.split('.');  part.pop();   var first=part[0];   var message='Hi '+first+'\n';   if (name) var w=document.location='mailto:'+name+'?subject=Regarding SR '+sr.value+'--'+sum.value+'&body='+message; else alert('Email not found ...');">EmailOwner</a>
-<i>---  New, use in SR page</i></li></h3>
-
-
-<h3><li>
-<a href="javascript: var FE=document.getElementById('assignee').value; (window.open('https://people.us.oracle.com/pls/oracle/find_person?p_string='+FE)); win.focus();">AriaFE</a>
-<i>---  New, use in FT page</i></li></h3>
-
-
-<h3><li>
-<a href="javascript: var emailid=document.getElementById('empEmail').value; (window.open('https://people.us.oracle.com/pls/oracle/find_person?p_string='+emailid+'')); win.focus();">AriaOwner</a>
-<i>---  New, use in SR page</i></li></h3>
-
-
-
-
-<h3>-------------------------------------------------------------------------------------------------------</h3>
-
-<h3>Note: Please be note that these tools are tuned for X86 product only, if you use it for other product SRs you may get error page or get no response! </h3>
-
-<h4>If you have questions regarding these tools, please mail to miler.park@oracle.com </h4>
-</body>
-
+<!DOCTYPE HTML>
+<!--
+	Directive by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Directive by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+				<span class="logo icon fa-paper-plane-o"></span>
+				<h1>Hi. This is Directive.</h1>
+				<p>A responsive HTML5 + CSS3 site template designed by <a href="http://html5up.net">HTML5 UP</a>
+				<br />
+				and released for free under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<header class="major container medium">
+					<h2>We conduct experiments that
+					<br />
+					may or may not seriously
+					<br />
+					break the universe</h2>
+					<!--
+					<p>Tellus erat mauris ipsum fermentum<br />
+					etiam vivamus nunc nibh morbi.</p>
+					-->
+				</header>
+
+				<div class="box alt container">
+					<section class="feature left">
+						<a href="#" class="image icon fa-signal"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="content">
+							<h3>The First Thing</h3>
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="#" class="image icon fa-code"><img src="images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h3>The Second Thing</h3>
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="#" class="image icon fa-mobile"><img src="images/pic03.jpg" alt="" /></a>
+						<div class="content">
+							<h3>The Third Thing</h3>
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+						</div>
+					</section>
+				</div>
+
+				<!--
+				<div class="box container">
+					<header>
+						<h2>A lot of generic stuff</h2>
+					</header>
+					<section>
+						<header>
+							<h3>Paragraph</h3>
+							<p>This is the subtitle for this particular heading</p>
+						</header>
+						<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+						habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+						leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+						amet risus elit.</p>
+					</section>
+					<section>
+						<header>
+							<h3>Blockquote</h3>
+						</header>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+						tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
+					</section>
+					<section>
+						<header>
+							<h3>Divider</h3>
+						</header>
+						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+						posuere cubilia.</p>
+						<hr />
+						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+						posuere cubilia.</p>
+					</section>
+					<section>
+						<header>
+							<h3>Unordered List</h3>
+						</header>
+						<ul class="default">
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						</ul>
+					</section>
+					<section>
+						<header>
+							<h3>Ordered List</h3>
+						</header>
+						<ol class="default">
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						</ol>
+					</section>
+					<section>
+						<header>
+							<h3>Table</h3>
+						</header>
+						<div class="table-wrapper">
+							<table class="default">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>45815</td>
+										<td>Something</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>24524</td>
+										<td>Nothing</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>45815</td>
+										<td>Something</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>24524</td>
+										<td>Nothing</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>19.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="3"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+					<section>
+						<header>
+							<h3>Form</h3>
+						</header>
+						<form method="post" action="#">
+							<div class="row">
+								<div class="col-6 col-12-mobilep">
+									<label for="name">Name</label>
+									<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<label for="email">Email</label>
+									<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+								</div>
+								<div class="col-12">
+									<label for="subject">Subject</label>
+									<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+								</div>
+								<div class="col-12">
+									<label for="subject">Message</label>
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="submit" value="Send" /></li>
+										<li><input type="reset" value="Reset" class="alt" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+				-->
+
+				<footer class="major container medium">
+					<h3>Get shady with science</h3>
+					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+					<ul class="actions special">
+						<li><a href="#" class="button">Join our crew</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container medium">
+
+					<header class="major last">
+						<h2>Questions or comments?</h2>
+					</header>
+
+					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
+					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+
+					<form method="post" action="#">
+						<div class="row">
+							<div class="col-6 col-12-mobilep">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-mobilep">
+								<input type="email" name="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
