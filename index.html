@@ -1,1 +1,346 @@
-Oracle Service Request Comparison
+<html lang="en-US">
+
+<head>Bookmark Tool
+
+<style type='text/css'>
+
+head
+{
+margin:auto;
+width:20%;
+
+}
+h1
+{
+margin:auto;
+width:30%;
+wight:bold;
+}
+
+li
+{
+margin:auto;
+width:60%;
+background-color:#b0e0e6;
+}
+
+h3
+{
+margin:auto;
+width:60%;
+
+}
+
+h4
+{
+margin:auto;
+width:60%;
+
+}
+</style>
+
+
+
+</head>
+
+<body>
+<h1>Steps to use these tools</h1>
+<h3>1. Just drag and drop below URLs to your Browser's tool bar.</h3>
+<h3>2. In MOS SR page, click the bookmark you just added.</h3>
+<h3>Enjoy!</h3>
+
+<h3>-------------------------------------------------------------------------------------------------------</h3>
+<h3><li>
+<a href="javascript:
+
+var result='Not found product name!!';
+var Product=document.getElementById('productDescription'); 
+if(Product==null) {alert(result)};
+var str=Product.value;  
+var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i;
+var pattbody=/[VX]?[0-9-]+[zLB]?/;
+var patttail=/( M2| M3| P|post July|Disk Module)/i;
+
+var Realhead=patthead.exec(str);
+var realhead=Realhead[0];
+var realbody=pattbody.exec(str);
+
+if(patttail.test(str))
+{ var Realtail=patttail.exec(str);
+var realtail=Realtail[0];}
+else { var realtail=null};
+
+
+result=realhead+'_'+realbody;
+if(realtail){ result=result+'_'+realtail}; 
+result=result.replace(/(\s|-)/g,'_');
+result=result.replace(/_+/g,'_');
+result=result.replace(/_Blade_/i,'Blade');
+result=result.replace(/_Fire_/i,'Fire');
+
+
+result=result.replace('Sun_Server_X3_2L','SunFireX4270_M3');
+result=result.replace('Sun_Server_X3_2','SunFireX4170_M3');
+result=result.replace('Sun_Server_X2_8','SunFireX4800_M2');
+result=result.replace('Sun_Server_X2_4','SunFireX4470_M2');
+result=result.replace('SunBladeX3_2B','SunBladeX6270_M3');
+result=result.replace('Netra_X3_2','Netra_X4270_M3');
+result=result.replace('Netra_X3_2B','Netra_X6270_M3');
+result=result.replace(/Netra_3/,'Netra_CP_3');
+
+if(result.length<30)
+{ void(window.open('https://mosemp.us.oracle.com/handbook_internal/Systems/'+result+'/'+result+'.html'));}
+else(alert(result));">Handbook</a>
+<i>---  Updated, use in SR page</i></li></h3>
+
+
+
+
+
+
+<h3><li>
+<a href="javascript:
+
+var result='Not found product name!!';
+var Product=document.getElementById('productDescription'); 
+if(Product==null) {alert(result)};
+var str=Product.value;  
+var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i;
+var pattbody=/[VX]?[0-9-]+[zLB]?/;
+var patttail=/( M2| M3| P|post July|Disk Module)/i;
+
+var Realhead=patthead.exec(str);
+var realhead=Realhead[0];
+var realbody=pattbody.exec(str);
+
+if(patttail.test(str))
+{ var Realtail=patttail.exec(str);
+var realtail=Realtail[0];}
+else { var realtail=null};
+
+
+result=realhead+'_'+realbody;
+if(realtail){ result=result+'_'+realtail}; 
+result=result.replace(/(\s|-)/g,'_');
+result=result.replace(/_+/g,'_');
+result=result.replace(/_Blade_/i,'Blade');
+result=result.replace(/_Fire_/i,'Fire');
+
+
+result=result.replace('Sun_Server_X3_2L','SunFireX4270_M3');
+result=result.replace('Sun_Server_X3_2','SunFireX4170_M3');
+result=result.replace('Sun_Server_X2_8','SunFireX4800_M2');
+result=result.replace('Sun_Server_X2_4','SunFireX4470_M2');
+result=result.replace('SunBladeX3_2B','SunBladeX6270_M3');
+result=result.replace('Netra_X3_2','Netra_X4270_M3');
+result=result.replace('Netra_X3_2B','Netra_X6270_M3');
+result=result.replace(/Netra_3/,'Netra_CP_3');
+
+if(result.length<30)
+{ void(window.open('https://mosemp.us.oracle.com/handbook_internal/Systems/'+result+'/'+'components.html'));}
+else(alert(result));">Components</a>
+<i>---  Updated, use in SR page</i></li></h3>
+
+
+
+
+
+<h3><li>
+<a href="javascript:
+
+var result='Sorry, Product name not recognized!!';
+var Product=document.getElementById('productDescription'); 
+if(Product==null) {alert(result)};
+var str=Product.value;  
+var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i;
+var pattbody=/[VX]?[0-9-]+[zLB]?/;
+var patttail=/( M2| M3| P|post July|Disk Module)/i;
+
+var Realhead=patthead.exec(str);
+var realhead=Realhead[0];
+var realbody=pattbody.exec(str);
+
+if(patttail.test(str))
+{ var Realtail=patttail.exec(str);
+var realtail=Realtail[0];}
+else { var realtail=null};
+
+
+result=realhead+'_'+realbody;
+if(realtail){ result=result+'_'+realtail}; 
+result=result.replace(/(\s|-)/g,'_');
+result=result.replace(/_+/g,'_');
+result=result.replace(/_Blade_/i,'Blade');
+result=result.replace(/_Fire_/i,'Fire');
+
+
+result=result.replace('Sun_Server_X3_2L','SunFireX4270_M3');
+result=result.replace('Sun_Server_X3_2','SunFireX4170_M3');
+result=result.replace('Sun_Server_X2_8','SunFireX4800_M2');
+result=result.replace('Sun_Server_X2_4','SunFireX4470_M2');
+result=result.replace('SunBladeX3_2B','SunBladeX6270_M3');
+result=result.replace('Netra_X3_2','Netra_X4270_M3');
+result=result.replace('Netra_X3_2B','Netra_X6270_M3');
+result=result.replace(/Netra_3/,'Netra_CP_3');
+
+if(result.length<30)
+{ void(window.open('https://mosemp.us.oracle.com/handbook_internal/Systems/'+result+'/'+'docs.html'));}
+else(alert(result));">Docs</a>
+<i>---  Updated, use in SR page</i></li></h3>
+
+
+
+
+
+<h3><li>
+<a href="javascript:
+
+var result='Not found product name!!';
+var Product=document.getElementById('productDescription'); 
+if(Product==null) {alert(result)};
+var str=Product.value;  
+var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i;
+var pattbody=/[VX]?[0-9-]+[zLB]?/;
+var patttail=/( M2| M3| P|post July|Disk Module)/i;
+
+var Realhead=patthead.exec(str);
+var realhead=Realhead[0];
+var realbody=pattbody.exec(str);
+
+if(patttail.test(str))
+{ var Realtail=patttail.exec(str);
+var realtail=Realtail[0];}
+else { var realtail=null};
+
+
+result=realhead+'_'+realbody;
+if(realtail){ result=result+'_'+realtail}; 
+result=result.replace(/(\s|-)/g,'_');
+result=result.replace(/_+/g,'_');
+result=result.replace(/_Blade_/i,'Blade');
+result=result.replace(/_Fire_/i,'Fire');
+
+
+result=result.replace('Sun_Server_X3_2L','SunFireX4270_M3');
+result=result.replace('Sun_Server_X3_2','SunFireX4170_M3');
+result=result.replace('Sun_Server_X2_8','SunFireX4800_M2');
+result=result.replace('Sun_Server_X2_4','SunFireX4470_M2');
+result=result.replace('SunBladeX3_2B','SunBladeX6270_M3');
+result=result.replace('Netra_X3_2','Netra_X4270_M3');
+result=result.replace('Netra_X3_2B','Netra_X6270_M3');
+result=result.replace(/Netra_3/,'Netra_CP_3');
+
+if(result.length<30)
+{ void(window.open('https://mosemp.us.oracle.com/handbook_internal/Systems/'+result+'/'+'ht.html'));}
+else(alert(result));">How to</a><i>---  Updated, use in SR page</i></li></h3>
+
+
+
+
+
+<h3><li>
+<a href="javascript: 
+
+var result='Not found product name!!'; 
+
+var Product=document.getElementById('productDescription'); 
+if(Product==null) {alert(result)}; 
+var str=Product.value; 
+var patthead=/(Exadata|Exadata Storage|Exalogic|Exalytics|Netra|Oracle Server|Oracle SuperCluster|Sun Blade|Sun Fire|Sun Server)/i; 
+var pattbody=/[VX]?[0-9-]+[zLB]?/; 
+var patttail=/( M2| M3| P|post July|Disk Module)/i; 
+var Realhead=patthead.exec(str); 
+var realhead=Realhead[0]; 
+var realbody=pattbody.exec(str); 
+var patt0=/(CP\d+|CT 900)/i;
+
+if(patttail.test(str)) 
+{ var Realtail=patttail.exec(str); var realtail=Realtail[0];} 
+else { var realtail=''}; 
+result=realhead+realbody+realtail; 
+result=result.replace(/Netra/i,'N'); 
+result=result.replace(/\s/g, ''); 
+result=result.replace(/SunFire/i,''); 
+result=result.replace(/SunServer/i,''); 
+result=result.replace(/SunBlade/i,''); 
+result=result.replace(/OracleServer/i,''); 
+ 
+
+if(result.length<30) 
+
+if (result=='X4600M2') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4600'));} 
+else if (result=='X2200M2') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X2200'));} 
+else if (result=='X2100M2') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X2100'));} 
+else if (result=='X4200M2') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4100M2'));} 
+else if (result=='X4240') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4140'));} 
+else if (result=='X4270') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4170'));} 
+else if (result=='X4275') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4170'));} 
+else if (result=='X4440') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4140'));} 
+else if (result=='X4200') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#X4100'));} 
+else if (result=='NX4200M2') 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#NX4200'));} 
+else if (patt0.test(str)) 
+{ void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#CT900'));} 
+
+
+else if (result=='ExadataX2-8'|result=='ExadataX2-2'|result=='ExadataV2') 
+{ void(window.open(' https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=478246353467130&parent=DOCUMENT&sourceId=1354631.1&id=1358327.1&_afrWindowMode=0'));} 
+else if (result=='ExadataX3-8'|result=='ExadataX3-2'|result=='ExadataX4-2') 
+{ void(window.open('https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=478985447942978&parent=DOCUMENT&sourceId=1354631.1&id=1501410.1&_afrWindowMode=0'));} 
+else if (result=='ExadataX5-8'|result=='ExadataX5-2'|result=='ExadataX6-2'|result=='ExadataX6-8') 
+{ void(window.open('https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=479087484160514&parent=DOCUMENT&sourceId=1354631.1&id=1998905.1&_afrWindowMode=0'));} 
+else if (result=='ExadataX4-8') 
+{ void(window.open('https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=478985447942978&parent=DOCUMENT&sourceId=1354631.1&id=1501410.1&_afrWindowMode=0')); 
+void(window.open('https://mosemp.us.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=479087484160514&parent=DOCUMENT&sourceId=1354631.1&id=1998905.1&_afrWindowMode=0')); } 
+
+else { void(window.open('http://www.oracle.com/technetwork/systems/patches/firmware/release-history-jsp-138416.html#'+result+''));} 
+else(alert(result));">Firmware Version</a><i>---  New, use in SR page</i></li></h3>
+
+
+
+
+
+<h3><li>
+<a href="javascript:%20%20%20%20%20var%20sr=document.getElementById('srNumber');%20%20%20var%20sum=document.getElementById('summary');%20%20var%20customer=document.getElementById('contactEmail');%20%20%20%20%20var%20name=customer.value;%20%20%20%20var%20part=name.split('.');%20%20%20part.pop();%20%20%20%20var%20first=part[0];%20%20%20%20var%20message='Hi%20'+first+'\n';%20%20%20%20if%20(name)%20%20var%20w=document.location='mailto:'+name+'?subject=Regarding%20SR%20'+sr.value+'--'+sum.value+'&body='+message;%20else%20alert('Email%20not%20found%20...');">EmailCustomer</a>
+<i>---  New, use in SR page</i></li></h3>
+
+
+<h3><li>
+<a href="javascript:  var FT=document.getElementById('displayNumber'); var sr=document.getElementById('parentSR');   var FE=document.getElementById('assignee');   var name=FE.value;  var part=name.split('@'); part.pop();  var first=part[0];  var message='Hi '+first+'\n';  if (FE) var w=document.location='mailto:'+FE.value+'?subject=Regarding FT '+FT.value+' -- SR '+sr.value+'&body='+message;    else alert('Email not found ...');">EmailFE</a>
+<i>---  New, use in FT page</i></li></h3>
+
+
+<h3><li>
+<a href="javascript:    var sr=document.getElementById('srNumber');  var sum=document.getElementById('summary'); var owner=document.getElementById('empEmail');    var name=owner.value;   var part=name.split('.');  part.pop();   var first=part[0];   var message='Hi '+first+'\n';   if (name) var w=document.location='mailto:'+name+'?subject=Regarding SR '+sr.value+'--'+sum.value+'&body='+message; else alert('Email not found ...');">EmailOwner</a>
+<i>---  New, use in SR page</i></li></h3>
+
+
+<h3><li>
+<a href="javascript: var FE=document.getElementById('assignee').value; (window.open('https://people.us.oracle.com/pls/oracle/find_person?p_string='+FE)); win.focus();">AriaFE</a>
+<i>---  New, use in FT page</i></li></h3>
+
+
+<h3><li>
+<a href="javascript: var emailid=document.getElementById('empEmail').value; (window.open('https://people.us.oracle.com/pls/oracle/find_person?p_string='+emailid+'')); win.focus();">AriaOwner</a>
+<i>---  New, use in SR page</i></li></h3>
+
+
+
+
+<h3>-------------------------------------------------------------------------------------------------------</h3>
+
+<h3>Note: Please be note that these tools are tuned for X86 product only, if you use it for other product SRs you may get error page or get no response! </h3>
+
+<h4>If you have questions regarding these tools, please mail to miler.park@oracle.com </h4>
+</body>
+
+</html>
